@@ -110,24 +110,26 @@
     padding: 20px;
 }
 
-.images { 
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-    width: 100vw;
-    
-    grid-template-columns: repeat(auto-fill, minmax(100% 100%));
-    column-gap: 10px;
-    row-gap: 10px;
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-.img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
-    
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
 }
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+    
 
 .last {
     display: flex;
